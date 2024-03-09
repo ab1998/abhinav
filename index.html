@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <div id="root"><h1>name</h1></div><!--If anything is placed inside div, it will get replaced-->
+    <h1>Hi</h1>
+    <!-- <script>
+    const heading = document.createElement("h1");
+    const root = document.getElementById("root");
+    console.log(root, heading);
+    heading.innerHTML = "Hello World";
+    root.appendChild(heading);
+  </script> -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <!--Core React File-->
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <!--React library for DOM Operations/Modify DOM. Bridge between react and DOM-->
+    <script src="./App.js">
+      // if placed above CDN link, it will throw an error as it is using that link
+    </script>
+  </body>
+</html>
